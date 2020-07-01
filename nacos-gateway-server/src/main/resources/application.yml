@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: nacos-gateway-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      routes:
+        - id: nacos-provider
+          uri: lb://nacos-provider
+          predicates:
+           - Path=/provider/**
+          filter:
+            - StripPrefix=1
+
+
+server:
+  port: 8057
