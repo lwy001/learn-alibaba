@@ -4,7 +4,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: 106.52.131.86:8848
     gateway:
       routes:
         - id: nacos-provider
@@ -16,4 +16,4 @@ spring:
 
 
 server:
-  port: 8057
+  port: 8054
