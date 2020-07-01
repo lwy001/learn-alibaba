@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: nacos-config-client
+  cloud:
+    nacos:
+      config:
+        server-addr: 106.52.131.86:8848
+        file-extension: yml
+
+server:
+  port: 8055
